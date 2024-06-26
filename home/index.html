@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet <> Home</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+                <div class="logo">Site Name</div>
+                <div class="navigation">
+                    <ul>
+                        <li>Home</li>
+                        <li>Our Service</li>
+                        <li>Contact Us</li>
+                        <li><button class="button">Login</button></li>
+                    </ul>
+                </div>
+        </div>
+        <div class="banner">
+            <h1 class="landing_text">Landing Page Title</h1>
+            <h1 class="sub">and subheading describing your site, too</h1>
+            <h1><button class="button">Get Started</button><h1>
+        </div>
+        <div class="content">
+            <img src="../img/food.jpg" class="image"/>
+        </div>
+        <div class="lower-content">
+            <p><h2>Heading</h2></p>
+            <p><h4 style="font-weight: lighter;color: grey;">subheading to introduce testimonials.</h4></p>
+        </div>
+        <div class="three-box">
+            <div class="inner-box">
+                <div>"A terrific piece of praise"</div>
+                <div class="image-class">
+                    <div><img src="../img//profile/passport.jpg" class="pass-picture"/></div>
+                    <div class="lower-picture">
+                        <div>Name</div>
+                        <div>Description</div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-box">
+                <div><span>"A terrific piece of praise"</span></div>
+                <div class="image-class">
+                    <div><img src="../img//profile/passport.jpg" class="pass-picture"/></div>
+                    <div class="lower-picture">
+                        <div>Name</div>
+                        <div>Description</div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-box">
+                <div><span>"A terrific piece of praise"</span></div>
+                <div class="image-class">
+                    <div><img src="../img//profile/passport.jpg" class="pass-picture"/></div>
+                    <div class="lower-picture">
+                        <div>Name</div>
+                        <div>Description</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    .lower-picture :nth-child(2){
+        color: gray;
+    }
+    .lower-picture{
+       line-height: 20px;
+       font-size: 12px;
+    }
+    .pass-picture{
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+    }
+    .image-class{
+        display: flex;
+        gap: 20px;
+        margin-top: 30px;
+    }
+    .inner-box{
+        background-color: #ffffff;
+        width: 26%;
+        height: 130px;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 1px 1px grey;
+    }
+    .three-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        
+    }
+    .lower-content{
+        margin-left: 60px;
+    }
+    .image{
+        height: 500px;
+        width: 90%;
+    }
+    .sub{
+        margin-top: -20px;
+        margin-bottom: -20px;
+        font-size: 14px;
+        color: grey;
+    }
+    .button{
+        background-color: blue;
+        color: white;
+        border: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius:4px;
+    }
+    .landing_text{
+        font-size: 40px;
+        font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: bolder;
+    }
+    .content{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+    }
+    .navigation ul{
+        display: flex;
+    }
+    .navigation ul li{
+        margin-left: 15px;
+        list-style: none;
+    }
+    .banner{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        width: 100%;
+        padding: 2px;
+    }
+    .header{
+        height: 80px;
+        display: flex;
+        justify-content: space-around;
+        background-color: aliceblue;
+        align-items: center;
+    }
+    body{
+        padding: 0px;
+        margin: 0px;
+        overflow-x: hidden;
+    }
+</style>
